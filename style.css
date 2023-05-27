@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+:root {
+  --blue: #345ff6;
+  --gunmetal: #253347;
+  --dark-electric-blue: #5e6e85;
+  --borders: #d8e2e7;
+  --pure-white: #ffffff;
+}
+/* Typography */
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -0.05em;
+  color: #253347;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.05em;
+  color: #253347;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  color: #253347;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+  color: #253347;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5e6e85;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+/* Layout */
+.calculator {
+  padding-top: 167px;
+  padding-bottom: 86px;
+  background: linear-gradient(
+    290.1deg,
+    #d6e6fe 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+  border-radius: 0px 0px 35px 35px;
+}
+.data-wraper {
+  max-width: 564px;
+  padding: 32px;
+  background: #ffffff;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+  border-radius: 16px;
+}
+.form-check-input[type="radio"] {
+  background: #ffffff;
+  border: 1px solid #d8e2e7;
+}
+.form-check-input[type="radio"]:hover {
+  background: #ffffff;
+  border: 1px solid #345ff6;
+}
+.form-check-input[type="radio"]:checked {
+  background: #345ff6;
+  outline: 10px solid rgba(52, 95, 246, 0.15);
+}
+.form-check-label {
+}
+.input-group {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #d8e2e7;
+  border-radius: 12px;
+}
+.input-group span {
+  border: none;
+  background: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  color: #345ff6;
+}
+#height,
+#weight {
+  max-width: 131px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  color: #253347;
+}
+#height::placeholder,
+#weight::placeholder {
+  opacity: 0.25;
+}
+.form-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #5e6e85;
+}
+.welcome {
+  padding: 32px;
+  background: linear-gradient(90deg, #345ff7 0%, #587dff 100%);
+  border-radius: 35px 300px 300px 35px;
+}
+.welcome h3 {
+  color: #ffffff;
+}
+.welcome p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+}
+/* Section Result */
+.result {
+  padding-top: 65px;
+  padding-bottom: 96px;
+}
+.result-content {
+  max-width: 465px;
+}
+/* Section Recomendations */
+.recomendations {
+  padding-top: 72px;
+  padding-bottom: 96px;
+  background: linear-gradient(
+    290.1deg,
+    rgba(214, 230, 254, 0.25) 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+  border-radius: 35px;
+}
+
+.recomendation-card {
+  transition: all 0.3s ease-in-out;
+}
+.recomendation-card:hover {
+  transform: scale(1.05);
+}
+
+/* Section Limitations */
+.limitations {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.limitations-card {
+  max-width: 365px;
+  max-height: 232px;
+  padding: 32px;
+  background: #ffffff;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.limitations-card:hover {
+  box-shadow: 16px 32px 56px rgba(52, 95, 246, 0.25);
+  transform: scale(1.05);
+  z-index: 10;
+}
