@@ -79,6 +79,9 @@ p {
   );
   border-radius: 0px 0px 35px 35px;
 }
+.text-content p {
+  max-width: 465px;
+}
 .data-wraper {
   max-width: 564px;
   padding: 32px;
@@ -203,4 +206,13 @@ p {
   box-shadow: 16px 32px 56px rgba(52, 95, 246, 0.25);
   transform: scale(1.05);
   z-index: 10;
+}
+@media (max-width: 768.98px) {
+  .text-content p {
+    max-width: 100%;
+  }
+  .data-wraper {
+    max-width: none;
+    width: 100%;
+  }
 }
