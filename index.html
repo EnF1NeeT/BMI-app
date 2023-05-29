@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   </head>
     <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Body Mass Index Calculator</title>
+    <title>Body Mass Index Calculator</title>
   </head>
   <body>
     <section class="calculator">
@@ -35,7 +35,7 @@
               <div>
                 <h3 class="m-0">Enter your details below</h3>
               </div>
-              <div class="d-flex flex-row gap-5">
+              <div class="d-flex flex-row  gap-5">
                 <div class="form-check m-0 w-50">
                   <label class="form-check-label" for="flexRadioDefault1">
                     <h3 class="m-0">Metric</h3>
@@ -61,7 +61,7 @@
                   />
                 </div>
               </div>
-              <div class="d-flex flex-row gap-3 w-100">
+              <div class="d-flex flex-md-row flex-column gap-3 w-100">
                 <div class="mb-3 w-100 m-0">
                   <label for="height" class="form-label">Height</label>
                   <div class="input-group justify-content-between">
@@ -113,7 +113,7 @@
               alt="man eating"
             />
           </div>
-          <div class="col-md-5 offset-md-1">
+          <div class="col-md-5 mt-md-0 mt-5 offset-md-1">
             <div class="result-content">
               <h2 class="m-0">What your BMI result means</h2>
               <p class="m-0 mt-5">
@@ -132,11 +132,11 @@
     </section>
     <section class="recomendations ms-3 me-3">
       <div class="container">
-        <div class="row d-flex">
-          <div class="col">
+        <div class="row d-flex gap-5 gap-lg-0">
+          <div class="col-lg-4">
             <div class="recomendation-card">
-              <div class="card border-0 bg-transparent" style="width: 22.813rem">
-                <img src="assets/images/icon-eating.svg" style="width: 64px; margin-bottom: 45px;" alt="eating" />
+              <div class="card d-flex flex-lg-column flex-md-row flex-column gap-3 align-items-start align-items-md-center align-items-lg-start border-0 bg-transparent">
+                <img src="assets/images/icon-eating.svg" class="mb-0 mb-lg-5" style="width: 64px;" alt="eating" />
                 <div class="card-body p-0">
                   <h3 class="card-title mb-4" >Healthy eating</h5>
                   <p class="card-text">
@@ -146,10 +146,10 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-4">
             <div class="recomendation-card">
-              <div class="card border-0 bg-transparent" style="width: 22.813rem">
-                <img src="assets/images/icon-exercise.svg" style="width: 64px; margin-bottom: 45px;" alt="eating" />
+              <div class="card d-flex flex-lg-column flex-md-row flex-column gap-3 align-items-start align-items-md-center align-items-lg-start border-0 bg-transparent">
+                <img src="assets/images/icon-exercise.svg" class="mb-0 mb-lg-5" style="width: 64px;" alt="eating" />
                 <div class="card-body p-0">
                   <h3 class="card-title mb-4">Regular exercise</h5>
                   <p class="card-text">
@@ -159,10 +159,10 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-4">
             <div class="recomendation-card">
-              <div class="card border-0 bg-transparent" style="width: 22.813rem">
-                <img src="assets/images/icon-sleep.svg" style="width: 64px; margin-bottom: 45px;" alt="eating" />
+              <div class="card d-flex flex-lg-column flex-md-row flex-column gap-3 align-items-start align-items-md-center align-items-lg-start border-0 bg-transparent">
+                <img src="assets/images/icon-sleep.svg" class="mb-0 mb-lg-5" style="width: 64px;" alt="eating" />
                 <div class="card-body p-0">
                   <h3 class="card-title mb-4">Adequate sleep</h5>
                   <p class="card-text">
@@ -172,16 +172,13 @@
               </div>
             </div>
           </div>
-          
-          
-          
         </div>
       </div>
     </section>
     <section class="limitations">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="limitations-content">
               <h2 class="m-0">
                 Limitations of BMI
@@ -191,7 +188,7 @@
               </p>
             </div>
           </div>
-          <div class="offset-md-1 col-md-4 p-3">
+          <div class="offset-lg-1 col-lg-4 p-3">
             <div class="limitations-card">
               <div class="card border-0 p-0 gap-3 bg-transparent">
                 <div class="d-flex align-items-center gap-3">
@@ -206,7 +203,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 justify-content-end d-flex p-3 offset-md-4">
+          <div class="col-lg-4 justify-content-end d-flex p-3 offset-lg-4">
             <div class="limitations-card">
               <div class="card border-0 p-0 gap-3 bg-transparent">
                 <div class="d-flex align-items-center gap-3">
@@ -219,7 +216,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-3">
+          <div class="col-lg-4 p-3">
             <div class="limitations-card">
               <div class="card border-0 p-0 gap-3 bg-transparent">
                 <div class="d-flex align-items-center gap-3">
@@ -234,7 +231,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 d-flex justify-content-end offset-md-2 p-3">
+          <div class="col-lg-4 d-flex justify-content-end offset-lg-2 p-3">
             <div class="limitations-card">
               <div class="card border-0 p-0 gap-3 bg-transparent">
                 <div class="d-flex align-items-center gap-3">
@@ -247,7 +244,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 p-3">
+          <div class="col-lg-4 p-3">
             <div class="limitations-card">
               <div class="card border-0 p-0 gap-3 bg-transparent">
                 <div class="d-flex align-items-center gap-3">
