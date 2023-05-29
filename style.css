@@ -6,6 +6,40 @@
   --borders: #d8e2e7;
   --pure-white: #ffffff;
 }
+
+nav {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(143, 174, 207, 0.25);
+  border-radius: 0px 0px 16px 16px;
+}
+a {
+  text-decoration: none;
+}
+.nav-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5e6e85;
+  transition: all 0.3s ease-in-out;
+  margin: 0 16px;
+}
+.nav-link:hover {
+  color: #345ff6;
+  box-shadow: inset 0px -2px 0px #345ff6;
+}
+.navbar-toggler {
+  border: none;
+  background: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%235e6e85' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 8h24M4 16h24M4 24h24'/%3e%3c/svg%3e");
+}
 /* Typography */
 h1 {
   font-family: "Inter";
@@ -69,15 +103,22 @@ p {
   flex-grow: 0;
 }
 /* Layout */
-.calculator {
-  padding-top: 167px;
-  padding-bottom: 86px;
+.back {
+  top: 0;
+  left: 0;
   background: linear-gradient(
     290.1deg,
     #d6e6fe 0%,
     rgba(214, 252, 254, 0) 100%
   );
   border-radius: 0px 0px 35px 35px;
+  z-index: -1;
+  width: 75%;
+  box-shadow: 0px 4px 16px rgba(143, 174, 207, 0.25);
+}
+.calculator {
+  padding-top: 167px;
+  padding-bottom: 86px;
 }
 .text-content p {
   max-width: 465px;
@@ -219,6 +260,9 @@ p {
     width: 100%;
   }
   .recomendation-card .card {
+    width: 100%;
+  }
+  .back {
     width: 100%;
   }
 }

@@ -16,8 +16,37 @@
     <link rel="stylesheet" href="style.css" />
     <title>Body Mass Index Calculator</title>
   </head>
+  
   <body>
-    <section class="calculator">
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.svg" alt="Bootstrap" width="32" height="32">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-lg-start text-center" href="#calculator">Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lg-start text-center" href="#result">BMI result</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lg-start text-center" href="#recomendations">Recomendations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lg-start text-center" href="#limitations">Limitations</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="calculator position-relative" id="calculator">
+      <div class="back h-100 position-absolute"></div>
       <div class="container">
         <div class="row d-flex align-items-center gap-5 gap-lg-0">
           <div class="col-lg-6 d-lg-block d-flex justify-content-center">
@@ -104,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="result">
+    <section class="result" id="result">
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-md-6">
@@ -131,7 +160,7 @@
         </div>
       </div>
     </section>
-    <section class="recomendations ms-3 me-3">
+    <section class="recomendations ms-3 me-3" id="recomendations">
       <div class="container">
         <div class="row d-flex gap-5 gap-lg-0">
           <div class="col-lg-4">
@@ -176,7 +205,7 @@
         </div>
       </div>
     </section>
-    <section class="limitations">
+    <section class="limitations" id="limitations">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
