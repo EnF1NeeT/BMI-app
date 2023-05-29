@@ -177,6 +177,9 @@ p {
 #weight::placeholder {
   opacity: 0.25;
 }
+.form-control:focus {
+  box-shadow: none;
+}
 .form-label {
   font-family: "Inter";
   font-style: normal;
