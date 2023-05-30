@@ -140,7 +140,7 @@ p {
 }
 .form-check-input[type="radio"]:checked {
   background: #345ff6;
-  outline: 10px solid rgba(52, 95, 246, 0.15);
+  outline: 5px solid rgba(52, 95, 246, 0.15);
 }
 .form-check-label {
 }
@@ -161,8 +161,7 @@ p {
   letter-spacing: -0.05em;
   color: #345ff6;
 }
-#height,
-#weight {
+.form-control {
   max-width: 131px;
   border: none;
   font-family: "Inter";
@@ -173,8 +172,7 @@ p {
   letter-spacing: -0.05em;
   color: #253347;
 }
-#height::placeholder,
-#weight::placeholder {
+.form-control::placeholder {
   opacity: 0.25;
 }
 .form-control:focus {
@@ -187,6 +185,32 @@ p {
   font-size: 14px;
   line-height: 150%;
   color: #5e6e85;
+}
+.btn-primary {
+  background: none !important;
+  border-radius: 12px;
+  border: 2px solid #587dff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #253347;
+  padding: 16px 32px;
+}
+.btn-primary:hover {
+  background: #587dff !important;
+  color: #ffffff !important;
+  box-shadow: 0px 4px 16px rgba(143, 174, 207, 0.25) !important;
+}
+#error p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ff4d4f !important;
+  text-align: center;
 }
 .welcome {
   padding: 32px;

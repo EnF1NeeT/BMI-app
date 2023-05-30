@@ -1,24 +1,72 @@
 "use strict";
 const metricRadio = document.getElementById("metric");
 const imperialRadio = document.getElementById("imperial");
-const heightAddon = document.getElementById("height-addon");
-const weightAddon = document.getElementById("weight-addon");
-const data = document.querySelector(".data");
-const metric =
-  '<div class="d-flex flex-md-row flex-column gap-3 w-100"><div class="mb-3 w-100 m-0">  <label for="height" class="form-label">Height</label>  <div class="input-group justify-content-between">    <input      type="number"      class="form-control p-0"      id="height"      placeholder="0"      maxlength="3"    />    <span class="input-group-text p-0" id="height-addon"      >cm</span    >  </div></div><div class="mb-3 w-100 m-0">  <label for="weight" class="form-label">Weight</label>  <div class="input-group justify-content-between">    <input      type="number"      class="form-control p-0"      id="weight"      placeholder="0"      maxlength="3"    />    <span class="input-group-text p-0" id="weight-addon"      >kg</span    >  </div></div></div>';
-const imperial =
-  '<div class="d-flex flex-md-row flex-column gap-3 w-100"><div class="mb-3 w-100 m-0">  <label for="height" class="form-label">Height</label>  <div class="input-group mb-3 justify-content-between">    <input      type="number"      class="form-control p-0"      id="height"      placeholder="0"      maxlength="3"    />    <span class="input-group-text p-0" id="height-addon"      >ft</span    >  </div>  <div class="input-group justify-content-between">    <input      type="number"      class="form-control p-0"      id="height"      placeholder="0"      maxlength="3"    />    <span class="input-group-text p-0" id="height-addon"      >in</span    >  </div></div><div class="mb-3 w-100 m-0">  <label for="height" class="form-label">Weight</label>  <div class="input-group mb-3 justify-content-between">    <input      type="number"      class="form-control p-0"      id="height"      placeholder="0"      maxlength="3"    />    <span class="input-group-text p-0" id="height-addon"      >st</span    >  </div>  <div class="input-group justify-content-between">    <input      type="number"      class="form-control p-0"      id="height"      placeholder="0"      maxlength="3"    />    <span class="input-group-text p-0" id="height-addon"      >lbs</span    >  </div></div></div>';
+const metricInputs = document.getElementById("metric-inputs");
+const imperialInputs = document.getElementById("imperial-inputs");
+const metricHeight = document.getElementById("metric-height");
+const metricWeight = document.getElementById("metric-weight");
+const imperialHeightFt = document.getElementById("imperial-height-ft");
+const imperialHeightIn = document.getElementById("imperial-height-in");
+const imperialWeightSt = document.getElementById("imperial-weight-st");
+const imperialWeightLbs = document.getElementById("imperial-weight-lbs");
+const calculateBtn = document.getElementById("calculate-btn");
+const error = document.getElementById("error");
 
-// Metric and Imperial system change
-metricRadio.addEventListener("click", () => {
-  if (metricRadio.checked) {
-    console.log("metric");
-    data.innerHTML = metric;
-  }
+metricRadio.addEventListener("change", function () {
+  metricInputs.classList.remove("d-none");
+  imperialInputs.classList.add("d-none");
 });
-imperialRadio.addEventListener("click", () => {
-  if (imperialRadio.checked) {
-    console.log("imperial");
-    data.innerHTML = imperial;
+imperialRadio.addEventListener("change", function () {
+  imperialInputs.classList.remove("d-none");
+  metricInputs.classList.add("d-none");
+});
+
+let height = 0;
+let weight = 0;
+let heightFt = 0;
+let heightIn = 0;
+let weightSt = 0;
+let weightLbs = 0;
+let bmi = 0;
+// Input data
+metricHeight.addEventListener("input", function () {
+  height = metricHeight.value;
+});
+metricWeight.addEventListener("input", function () {
+  weight = metricWeight.value;
+});
+imperialHeightFt.addEventListener("input", function () {
+  heightFt = imperialHeightFt.value;
+});
+imperialHeightIn.addEventListener("input", function () {
+  heightIn = imperialHeightIn.value;
+});
+imperialWeightLbs.addEventListener("input", function () {
+  weightLbs = imperialWeightLbs.value;
+});
+//Imperial to metric
+const imperialToMetric = function (heightFt, heightIn, weightLbs) {
+  height = (heightFt * 30, 48) + (heightIn * 2, 54);
+  weight = weightLbs * 0.45359237 + weightSt * 6.35029318;
+};
+//calculate BMI
+calculateBtn.addEventListener("click", function () {
+  if (metricRadio.checked) {
+    if (height > 0 && weight > 0) {
+      bmi = weight / (height / 100) ** 2;
+      console.log("BMI: " + bmi);
+      error.classList.add("d-none");
+    } else {
+      error.classList.remove("d-none");
+    }
+  } else if (imperialRadio.checked) {
+    if (heightFt > 0 && heightIn > 0 && weightLbs > 0) {
+      imperialToMetric(heightFt, heightIn, weightLbs);
+      bmi = weight / (height / 100) ** 2;
+      console.log("BMI: " + bmi);
+      error.classList.add("d-none");
+    } else {
+      error.classList.remove("d-none");
+    }
   }
 });
