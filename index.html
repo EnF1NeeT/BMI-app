@@ -188,11 +188,23 @@
                   <p class="m-0 mt-3">Please fill in all fields</p>
               </div>
               <div class="welcome mt-5">
-                <h3 class="mb-3">Welcome!</h3>
-                <p class="m-0">
-                  Enter your height and weight and you’ll see your BMI result
-                  here
-                </p>
+                <div class="welcome-msg">
+                  <h3 class="mb-3">Welcome!</h3>
+                  <p class="m-0">
+                    Enter your height and weight and you’ll see your BMI result
+                    here
+                  </p>
+                </div>
+                <div class="d-none result-data d-flex flex-column gap-4 align-items-center">
+                  <div class="bmi">
+                    <h4 class="m-0 text-center">Your BMI is...</h4>
+                    <h2 class="m-0 mt-3 text-center" id="bmi">22,00</h2>
+                    <h4 class="m-0 mt-3 text-center" id="range">Underweight</h4>
+                  </div>
+                  <div class="recomendation-text">
+                    <p class="m-0 text-center" id="recomendation">It's advisable to consult a healthcare professional to determine if there are any underlying health concerns and to discuss appropriate measures to achieve a healthy weight.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

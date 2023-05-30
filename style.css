@@ -199,15 +199,14 @@ p {
   padding: 16px 32px;
 }
 .btn-primary:hover {
-  background: #587dff !important;
-  color: #ffffff !important;
+  color: #253347 !important;
   box-shadow: 0px 4px 16px rgba(143, 174, 207, 0.25) !important;
 }
 #error p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   color: #ff4d4f !important;
   text-align: center;
@@ -217,7 +216,9 @@ p {
   background: linear-gradient(90deg, #345ff7 0%, #587dff 100%);
   border-radius: 35px 300px 300px 35px;
 }
-.welcome h3 {
+.welcome h3,
+h2,
+h4 {
   color: #ffffff;
 }
 .welcome p {
