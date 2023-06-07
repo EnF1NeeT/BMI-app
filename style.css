@@ -217,8 +217,8 @@ p {
   border-radius: 35px 300px 300px 35px;
 }
 .welcome h3,
-h2,
-h4 {
+.welcome h2,
+.welcome h4 {
   color: #ffffff;
 }
 .welcome p {
@@ -236,6 +236,14 @@ h4 {
 }
 .result-content {
   max-width: 465px;
+}
+.result-content h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #253347;
 }
 /* Section Recomendations */
 .recomendations {
