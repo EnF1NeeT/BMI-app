@@ -256,15 +256,24 @@ p {
   );
   border-radius: 35px;
 }
+.recomendation {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5e6e85;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  list-style: circle inside;
+}
 
 .recomendation-card {
   transition: all 0.3s ease-in-out;
 }
 .recomendation-card:hover {
   transform: scale(1.05);
-}
-.recomendation-card .card {
-  width: 22.813rem;
 }
 
 /* Section Limitations */
